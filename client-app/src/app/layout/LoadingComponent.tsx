@@ -7,7 +7,7 @@ interface Props{
 
 }
 
-export default function LoadingComponent({inverted = true, content = 'Loading...'}: Props){
+export default function LoadingComponent({inverted = true, content = 'Loading app...'}: Props){
 return(
 
 <Dimmer active={true} inverted={inverted}>
