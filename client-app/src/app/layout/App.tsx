@@ -32,7 +32,7 @@ if(commonStore.token){
 
 },[commonStore,userStore])
 
-if(!commonStore.appLoaded) return <LoadingComponent content='Loading app...'/>
+if(!commonStore.appLoaded) return <LoadingComponent content='Loading app..'/>
 
   return (
 
