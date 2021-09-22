@@ -6,6 +6,7 @@ using Application.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MediatR;
 
 namespace API.Middleware
 {
@@ -33,7 +34,7 @@ namespace API.Middleware
             }
             catch(Exception ex)
             {
-              _logger.LogError(ex,ex.Message);
+              _logger.LogError(ex, ex.Message);
               context.Response.ContentType = "application/json";
               context.Response.StatusCode = (int) HttpStatusCode.InternalServerError;
 
