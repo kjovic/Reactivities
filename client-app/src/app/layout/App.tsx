@@ -15,10 +15,6 @@ import { useStore } from '../stores/store';
 import LoadingComponent from './LoadingComponent';
 import ModalContainer from '../common/modals/ModalContainer';
 
-
-
-
-
 function App() {
 const location = useLocation();
 const {commonStore, userStore} = useStore();
@@ -32,7 +28,7 @@ if(commonStore.token){
 
 },[commonStore,userStore])
 
-if(!commonStore.appLoaded) return <LoadingComponent content='Loading app..'/>
+if(!commonStore.appLoaded) return <LoadingComponent content = 'Loading app...'/>
 
   return (
 
