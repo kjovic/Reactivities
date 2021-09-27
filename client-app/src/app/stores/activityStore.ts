@@ -231,5 +231,7 @@ this.loading = false;
   }
 
 
-
+    clearSelectedActivity = ()=>{
+         this.selectedActivity = undefined;
+    }
 }

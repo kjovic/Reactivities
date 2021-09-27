@@ -65,7 +65,7 @@ return(
                                  basic 
                                  color='red' 
                                  icon='trash'
-                                 loading={target == photo.id && loading}
+                                 loading={target === photo.id && loading}
                                  onClick={e => handleDeletePhoto(photo,e)}
                                  disabled={photo.isMain}
                                  name={photo.id}
